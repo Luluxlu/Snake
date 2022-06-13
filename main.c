@@ -13,7 +13,7 @@ void get_dimen(char* world, int *width, int *height){
             (*width)++;
         }
     }
-}
+} 
 
 int main(int argc, char** argv){
     char* fileName = NULL;
