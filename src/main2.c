@@ -55,12 +55,12 @@ int main(){
             break;
         }
         if(user_input == 's'){
-            if(x >= 1 && x<18){
+            if(x >= 1 && x<19){
                 xbis = x;
                 ybis = y;
                 x +=1;
             }
-            if(x >= 18) {
+            if(x >= 19) {
                 xbis = x;
                 ybis = y;
                 x = 1;
@@ -68,17 +68,17 @@ int main(){
             if(x <= 0) {
                 xbis = x;
                 ybis = y;
-                x = 17;
+                x = 18;
             }
             
         }
         if(user_input == 'z'){
-            if(x >= 1 && x<18){
+            if(x >= 1 && x<19){
                 xbis = x;
                 ybis = y;
                 x -=1;
             }
-            if(x >= 18) {
+            if(x >= 19) {
                 xbis = x;
                 ybis = y;
                 x = 1;
@@ -86,17 +86,17 @@ int main(){
             if(x <= 0) {
                 xbis = x;
                 ybis = y;
-                x = 17;
+                x = 18;
             }
             
         }
         if(user_input == 'd'){
-            if(y >= 1 && y<18){
+            if(y >= 1 && y<19){
                 xbis = x;
                 ybis = y;
                 y +=1;
             }
-            if(y >= 18) {
+            if(y >= 19) {
                 xbis = x;
                 ybis = y;
                 y = 1;
@@ -104,17 +104,17 @@ int main(){
             if(y <= 0) {
                 xbis = x;
                 ybis = y;
-                y = 17;
+                y = 18;
             }
             
         }
         if(user_input == 'q'){
-            if(y >= 1 && y<18){
+            if(y >= 1 && y<19){
                 xbis = x;
                 ybis = y;
                 y -=1;
             }
-            if(y >= 18) {
+            if(y >= 19) {
                 xbis = x;
                 ybis = y;
                 y = 1;
@@ -122,7 +122,7 @@ int main(){
             if(y <= 0) {
                 xbis = x;
                 ybis = y;
-                y = 17;
+                y = 18;
             }
         }
 
@@ -141,9 +141,11 @@ int main(){
     {
         printf("%s\n", world[i]);
     }
-
+        printf("%s\n", "Votre Score :");
         printf("%d\n", score);
+        printf("%s\n", "Votre position X :");
         printf("%d\n", xbis);
+        printf("%s\n", "Votre position Y :");
         printf("%d\n", ybis);
     }
 
