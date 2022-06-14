@@ -4,7 +4,7 @@
 struct coords {
     int x;
     int y;
-};
+}; 
 
 char world[20][21]={
     "XXXXXXXXXXXXXXXXXXXX",
