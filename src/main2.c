@@ -109,12 +109,12 @@ int main(){
             
         }
         if(user_input == 'q'){
-            if(y >= 1 && y<19){
+            if(y >= 1 && y<20){
                 xbis = x;
                 ybis = y;
                 y -=1;
             }
-            if(y >= 19) {
+            if(y >= 20) {
                 xbis = x;
                 ybis = y;
                 y = 1;
@@ -132,8 +132,16 @@ int main(){
             pommeY = (rand() % 19) + 1;
             score += 1;
         }
+        if(xbis >= 19){
+            world[18][ybis] = ' ';
+        }
+        if(ybis >= 20){
+            world[xbis][19] = ' ';
+        }
+        else{
+            world[xbis][ybis] = ' ';
+        }
         
-        world[xbis][ybis] = ' ';
         world[x][y] = 'o';
     
 
